@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # import unittest
 import pytest
-from gilded_rose import Item
-from gilded_rose import GildedRose
+from rose import Item
+from rose import GildedRose
 
 tstdata = [
     (Item(name="+5 Dexterity Vest", sell_in=10, quality=20), [

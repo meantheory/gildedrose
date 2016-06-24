@@ -17,9 +17,6 @@ class GildedRose(object):
         self.items = items
 
     def rules(self, item):
-        '''
-        This entire problem is a horrible mess of confusion and bad ideas.
-        '''
 
         # rule 1 - increment quality
         if item.name in [backstage, brie] \
@@ -53,7 +50,7 @@ class GildedRose(object):
         # rule 6 - decrease quality
         if item.sell_in < sell_in_threshold \
         and item.name == backstage:
-            item.dec('quality', item.quality)
+            item.quality = 0
 
         # rule 7 - increase quality
         if item.sell_in < sell_in_threshold \
